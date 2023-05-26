@@ -1,0 +1,15 @@
+// An array representing capybaras owned by Person A, it's empty because Person A has no capybaras - this represents 'Statement A' 
+const capybarasA = [];
+
+// Check if every capybara owned by Person A is white
+const allCapybarasAreWhiteA = capybarasA.every(capybara => capybara === 'white');
+
+console.log(allCapybarasAreWhiteA); // This will log true due to vacuous truth, because the array is empty
+
+// An array representing capybaras owned by Person B, they have at least one capybara that is not white - this represents 'Statement B' 
+const capybarasB = ['white', 'black'];
+
+// Check if every capybara owned by Person B is white
+const allCapybarasAreWhiteB = capybarasB.every(capybara => capybara === 'white');
+
+console.log(allCapybarasAreWhiteB); // This will log false, because there is at least one capybara that is not white
