@@ -3,7 +3,13 @@
 this is a solution to a condensed and altered version of a Brazilian Maths Olympiad logic-based problem
 
 ## The problem
-Assume the following two sentences are both true: **Person A always lies. Person A says "All my Capybaras are white." Of the following statements A and B, which can we conclude from the initial two sentences? Give solution in JS.**
+Assume the following two sentences are both true:
+
+**Person A always lies.**
+
+**Person A says "All my Capybaras are white."**
+
+Of the following statements A and B, which can we conclude from the initial two sentences? Give solution in JS.**
 
  <b>Statement A:</b> 
   ***Person A has no Capybaras.***
