@@ -46,10 +46,10 @@ Upon logging what's returned, we find that the statement "All my capybaras are w
 The same application of the function to an array representing Statement B would be as such:
 
 ```
-// An array representing capybaras owned by Person B, they have at least one capybara that is not white
+// An array representing capybaras owned by Person A, they have at least one capybara that is not white
 const capybarasB = ['white', 'black'];
 
-// Check if every capybara owned by Person B is white
+// Check if every capybara owned by Person A is white
 const allCapybarasAreWhiteB = areAllCapybarasWhite(capybarasB);
 ```
 
