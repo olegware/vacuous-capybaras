@@ -11,7 +11,7 @@ Assume the following two sentences are both true: **Person A always lies. Person
  <b>Statement B:</b>
   ***Person A has at least one Capybara.***
   
-## Understanding the question 
+## Understanding the problem 
 When going about solving this, the first step should be to deconstruct and understand the problem. It is a good idea to construct a conditional statement from the question. For example, with ***"Person A always lies"*** being the antecedent statement, we can take ***"All my Capybaras are white"*** to be incorrect for at least one condition of our conclusion. The task then becomes to figure out which of Statement A and Statement B allow this to be the case. To do this, we should take the two statements and group them individually such that we can test whether the logic checks out. Since we are told to provide a solution in JavaScript, it makes sense to represent the two statements as arrays of capybaras, the elements of which describe their colour. It's important to realise that the statements only control the length of our arrays and not the attributes of their elements.
 Therefore, we can think of Statement A as an empty array (since the statement requires it to contain no elements) and Statement B as an array of length ≥1, the elements of which are not specified.
 
