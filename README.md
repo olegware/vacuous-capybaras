@@ -1,6 +1,6 @@
 # vacuous-capybaras
 
-this is a solution to a condensed and altered version of a Brazilian Maths Olympiad logic-based problem
+This is a solution to a condensed and altered version of a Brazilian Maths Olympiad logic-based problem
 
 ## The problem
 Assume the following two sentences are both true:
