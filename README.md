@@ -1,6 +1,6 @@
 # vacuous-capybaras
 
-This is a solution to a condensed and altered version of a Brazilian Maths Olympiad logic-based problem
+This is a solution to a condensed and altered version of a Brazilian Maths Olympiad logic-based problem. See original problem [here](https://mindyourdecisions.com/blog/2022/06/22/brazilian-olympiad-pinocchios-green-hats-viral-question/)
 
 ## The problem
 Assume the following two sentences are both true:
