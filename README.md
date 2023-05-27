@@ -66,7 +66,7 @@ It seems entirely counterintuitive that the statement "All my capybaras are whit
  
   ***Therefore any given property is true by default***
   
-  A logical follow-up question would be ***At the same time, there are no elements which DO have a given property in an empty set, so why isn't any given property false by default***
+  A logical follow-up question would be ***At the same time, there are no elements which DO have a given property in an empty set, so why isn't any given property false by default?***
   
   The answer lies in the nature of the question, in that it is a question of quantity as opposed a question of existence. In formal logic, a universally quantified statement can be defined as: 
 
