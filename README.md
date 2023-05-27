@@ -57,7 +57,7 @@ In this case, this would log ***false*** as the inclusion of the element 'black'
 
 ## Why?
 
-It seems entirely counterintuitive to that the statement "All my capybaras are white" is true when the person has no capybaras. This solution relies on the fact that the 'every' method always returns true on an empty array. The answer to why this is the case is a concept in logic called **vacuous truth**. Vacuous truth can be explained like this: 
+It seems entirely counterintuitive that the statement "All my capybaras are white" is true when the person has no capybaras. This solution relies on the fact that the 'every' method always returns true on an empty array. The answer to why this is the case is a concept in logic called **vacuous truth**. Vacuous truth can be explained like this: 
 
 
 ***There are no elements in a given set***
