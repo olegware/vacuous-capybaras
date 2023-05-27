@@ -5,24 +5,24 @@ This is a solution to a condensed and altered version of a Brazilian Maths Olymp
 ## The problem
 Assume the following two sentences are both true:
 
-**Person A always lies.**
+**Person X always lies.**
 
-**Person A says "All my Capybaras are white."**
+**Person X says "All my Capybaras are white."**
 
 Of the following statements A and B, which can we conclude from the initial two sentences? Give a JavaScript based solution.
 
  <b>Statement A:</b> 
-  ***Person A has no Capybaras.***
+  ***Person X has no Capybaras.***
   
  <b>Statement B:</b>
-  ***Person A has at least one Capybara.***
+  ***Person X has at least one Capybara.***
   
 ## Understanding the problem 
 When going about solving this, the first step should be to deconstruct and understand the problem. It is a good idea to construct a conditional statement from the question. For example, with ***"Person A always lies"*** being the antecedent statement, we can take ***"All my Capybaras are white"*** to be incorrect for at least one condition of our conclusion. The task then becomes to figure out which of Statement A and Statement B allow this to be the case. To do this, we should take the two statements and group them individually such that we can test whether the logic checks out. Since we are told to provide a solution in JavaScript, it makes sense to represent the two statements as arrays of capybaras, the elements of which describe their colour. It's important to realise that the statements only control the length of our arrays and not the attributes of their elements.
 Therefore, we can think of Statement A as an empty array (since the statement requires it to contain no elements) and Statement B as an array of length ≥1, the elements of which are not specified.
 
 ## The solution
-Attempting to think of a solution in terms of real-world practicality can easily lead one to a false conclusion, which could then be backed up with flawed JS logic. It is important to understand that we are concerned with mathematical truth and not real-world practicality. For example, one may be drawn to immediately assume ***"If person A has no capybaras, then none of them can be white. If person A has at least one capybara, where person A has only one capybara, it may be a colour other than white and where person A has >1 capybara, at least one may be a colour other than white. Therefore we can conclude either statement from the initial two sentences"*** However, when we analyse each of the statements using an objective method, we find that only one of them can be correctly concluded. To show this, we take the two arrays that we constructed and apply the 'every' method to check if there is a condition where their elements can reach the requirements necessary. The function we can use for this is:
+Attempting to think of a solution in terms of real-world practicality can easily lead one to a false conclusion, which could then be backed up with flawed JS logic. It is important to understand that we are concerned with mathematical truth and not real-world practicality. For example, one may be drawn to immediately assume ***"If person X has no capybaras, then none of them can be white. If person X has at least one capybara, where person X has only one capybara, it may be a colour other than white and where person X has >1 capybara, at least one may be a colour other than white. Therefore we can conclude either statement from the initial two sentences"*** However, when we analyse each of the statements using an objective method, we find that only one of them can be correctly concluded. To show this, we take the two arrays that we constructed and apply the 'every' method to check if there is a condition where their elements can reach the requirements necessary. The function we can use for this is:
 
 ```
 // Function to check if all capybaras are white
