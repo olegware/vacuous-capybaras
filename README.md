@@ -11,5 +11,5 @@ this is a small problem and solution based on a Brazilian Maths Olympiad problem
  <b>Statement B:</b>
   ***Person A has at least one Capybara.***
   
-### Understanding the question 
+## Understanding the question 
 
