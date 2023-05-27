@@ -5,17 +5,17 @@ This is a solution to a condensed and altered version of a Brazilian Maths Olymp
 ## The problem
 Assume the following two sentences are both true:
 
-**Person X always lies.**
+**Person A always lies.**
 
-**Person X says "All my Capybaras are white."**
+**Person A says "All my Capybaras are white."**
 
 Of the following statements A and B, which can we conclude from the initial two sentences? Give a JavaScript based solution.
 
  <b>Statement A:</b> 
-  ***Person X has no Capybaras.***
+  ***Person A has no Capybaras.***
   
  <b>Statement B:</b>
-  ***Person X has at least one Capybara.***
+  ***Person A has at least one Capybara.***
   
 ## Understanding the problem 
 When going about solving this, the first step should be to deconstruct and understand the problem. It is a good idea to construct a conditional statement from the question. For example, with ***"Person A always lies"*** being the antecedent statement, we can take ***"All my Capybaras are white"*** to be incorrect for at least one condition of our conclusion. The task then becomes to figure out which of Statement A and Statement B allow this to be the case. To do this, we should take the two statements and group them individually such that we can test whether the logic checks out. Since we are told to provide a solution in JavaScript, it makes sense to represent the two statements as arrays of capybaras, the elements of which describe their colour. It's important to realise that the statements only control the length of our arrays and not the attributes of their elements.
