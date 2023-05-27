@@ -6,10 +6,10 @@ this is a small problem and solution based on a Brazilian Maths Olympiad problem
 <b>Person A always lies. Person A says "All my Capybaras are white." Of the following statements A and B, which is correct? Give solution in JS.</b>
 
  <b>Statement A</b> 
-  Person A has no Capybaras.
+ Person A has no Capybaras.
   
  <b>Statement B</b>
-  Person A has at least one Capybara.
+ Person A has at least one Capybara.
   
 # Understanding the question 
 
