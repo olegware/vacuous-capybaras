@@ -9,7 +9,7 @@ Assume the following two sentences are both true:
 
 **Person A says "All my Capybaras are white."**
 
-Of the following statements A and B, which can we conclude from the initial two sentences? Give solution in JS.**
+Of the following statements A and B, which can we conclude from the initial two sentences? Give a JavaScript based solution.
 
  <b>Statement A:</b> 
   ***Person A has no Capybaras.***
