@@ -18,7 +18,7 @@ Of the following statements A and B, which can we conclude from the initial two 
   ***Person A has at least one Capybara.***
   
 ## Understanding the problem 
-When going about solving this, the first step should be to deconstruct and understand the problem. It is a good idea to construct a conditional statement from the question. For example, with ***"Person A always lies"*** being the antecedent statement, we can take ***"All my Capybaras are white"*** to be incorrect for at least one condition of our conclusion. The task then becomes to figure out which of Statement A and Statement B allow this to be the case. To do this, we should take the two statements and turn them into sets such that we can test whether the logic checks out. Since we are told to provide a solution in JavaScript, it makes sense to represent the two statements as arrays of capybaras, the elements of which describe their colour. It's important to realise that the statements only control the length of our arrays and not the attributes of their elements.
+When going about solving this, the first step should be to deconstruct and understand the problem. It is a good idea to construct a conditional statement from the question. For example, with ***"Person A always lies"*** being the antecedent statement, we can take ***"All my Capybaras are white"*** to be incorrect for at least one condition of our conclusion. The task then becomes to figure out which of Statement A and Statement B allow this to be the case. To do this, we should take the two statements and represent them as sets so that we can test whether the logic checks out. Since we are told to provide a solution in JavaScript, it makes sense to represent the two statements as arrays of capybaras, the elements of which describe their colour. It's important to realise that the statements A and B only control the length of our arrays and not the attributes of their elements.
 Therefore, we can think of Statement A as an empty array (since the statement requires it to contain no elements) and Statement B as an array of length ≥1, the elements of which are not specified.
 
 ## The solution
@@ -41,7 +41,7 @@ const capybarasA = [];
 const allCapybarasAreWhiteA = areAllCapybarasWhite(capybarasA);
 ```
 
-Upon logging what's returned, we find that the statement "All my capybaras are white" is ***true*** when passed on an array containing 0 capybaras. Therefore, Person A would not be lying in this case and we can not correctly conclude statement A. 
+In this case, the statement "All capybaras are white" logs ***true***, therefore Person A would not be lying and we can not correctly conclude statement A. 
 
 The same application of the function to an array representing Statement B would be as such:
 
@@ -57,7 +57,7 @@ In this case, this would log ***false*** as the inclusion of the element 'black'
 
 ## Why?
 
-It seems entirely counterintuitive that the statement "All my capybaras are white" is true when the person has no capybaras. This solution relies on the fact that the 'every' method always returns true on an empty array. The answer to why this is the case is a concept in logic called **vacuous truth**. Vacuous truth can be explained like this: 
+It is common knowledge that the 'every' method returns true when passed on an empty array, however when put into practice it seems entirely counterintuitive that the statement "All my capybaras are white" is true when the person has no capybaras. This solution relies on the fact that the 'every' method always returns true on an empty array. The answer to why this is the case is a concept in logic called **vacuous truth**. Vacuous truth can be explained like this: 
 
 
 ***There are no elements in a given set***
@@ -68,7 +68,7 @@ It seems entirely counterintuitive that the statement "All my capybaras are whit
   
   A logical follow-up question would be ***At the same time, there are no elements which DO have a given property in an empty set, so why isn't any given property false by default?***
   
-  The answer lies in the nature of the question, in that it is a question of quantity as opposed a question of existence. In formal logic, a universally quantified statement can be defined as: 
+  The answer lies in the nature of the question - a question of quantity as opposed to a question of existence. In formal logic, a universally quantified statement can be defined as: 
 
 `("for all x, P(x)")`
 
@@ -77,8 +77,8 @@ If our problem was concerned with a statement of existence:
 
 `("there exists an x such that P(x)")`
 
-Then there is an argument to be made that Statement A can be correctly assumed. However, it is not appropriate in this case to use existence-based logic due to the wording of the problem. We are not attempting to confirm the existence of a white capybara/white capybaras in given sets. Conversely, we are trying to prove a specific statement to be false: ***"All my capybaras are white"*** - which is a universally quantified statement, not an existential one. To make this more intuitive, here is another example statement: 
+Then there would be an argument to be made that Statement A can be correctly assumed. However, it is not appropriate in this case to use existence-based logic due to the wording of the problem. We are not attempting to confirm the existence of a white capybara/white capybaras in given sets. Instead, we are trying to prove a specific statement to be false: ***"All my capybaras are white"*** - which is a universally quantified statement, not an existential one. To make this more intuitive, here is another example statement: 
 
 `All my pet unicorns have floppy ears.`
 
-It is a given that unicorns do not exist. What we are concerned with is therefore not the existence of said unicorns, but whether or not a specified quanitity can be assumed to possess a specified property. As there are by definition no unicorns which do **NOT** have floppy ears, the assertion that all of them do is true by default. Relating this back, a statement asserting that Person A has no capybaras, all of which are white is delivered with the same sentiment as ***All my pet unicorns have floppy ears.*** and therefore the logic is the same. Person A has no capybaras which are by necessity not white, thus all of person A's capybaras are white, and they would not be lying in saying so.
+It is a given that unicorns do not exist. What we are concerned with is therefore not the existence of said unicorns, but whether or not a specified quanitity can be assumed to possess a specified property. As there are by definition no unicorns which do **NOT** have floppy ears, the assertion that all of them do is true by default. Relating this back, a statement asserting that **Person A has no capybaras, all of which are white** is delivered with the same sentiment as **All my pet unicorns have floppy ears.** Tthe logic is therefore the same. Person A has no capybaras which are by necessity not white, thus all of person A's capybaras are white, and they would not be lying in saying so.
