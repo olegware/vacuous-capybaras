@@ -24,7 +24,7 @@ Therefore, we can think of Statement A as an empty array (since the statement re
 ## The solution
 Attempting to think of a solution in terms of real-world practicality can easily lead one to a false conclusion, which could then be backed up with flawed JS logic. It is important to understand that we are concerned with mathematical truth and not real-world practicality. For example, one may be drawn to immediately assume ***"If person A has no capybaras, then none of them can be white. If person A has at least one capybara, where person A has only one capybara, it may be a colour other than white and where person A has >1 capybara, at least one may be a colour other than white. Therefore we can conclude either statement from the initial two sentences"*** However, when we analyse each of the statements using an objective method, we find that only one of them can be correctly concluded. To show this, we take the two arrays that we constructed and apply the 'every' method to check if there is a condition where their elements can meet the necessary requirements. The function we can use for this is:
 
-```
+```javascript
 // Function to check if all capybaras are white
 function areAllCapybarasWhite(capybaras) {
   return capybaras.every(capybara => capybara === 'white');
@@ -33,7 +33,7 @@ function areAllCapybarasWhite(capybaras) {
 
 We can apply this function to an empty array representing Statement A as such: 
 
-```
+```javascript
 // An array representing capybaras owned by Person A, it's empty because Person A has no capybaras
 const capybarasA = [];
 
@@ -45,7 +45,7 @@ In this case, the statement "All capybaras are white" logs ***true***, therefore
 
 The same application of the function to an array representing Statement B would be as such:
 
-```
+```javascript
 // An array representing capybaras owned by Person A, they have at least one capybara that is not white
 const capybarasB = ['white', 'black'];
 
